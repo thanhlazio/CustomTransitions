@@ -10,6 +10,7 @@ import UIKit
 
 class MusicPlayerViewController : UIViewController {
     
+    @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var artwork: UIImageView!
     @IBOutlet weak var songTitle: UILabel!
     @IBOutlet weak var artist: UILabel!
@@ -19,6 +20,7 @@ class MusicPlayerViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let song = self.song {
+            background.image = song.artwork
             artwork.image = song.artwork
             songTitle.text = song.title
             artist.text = song.artist

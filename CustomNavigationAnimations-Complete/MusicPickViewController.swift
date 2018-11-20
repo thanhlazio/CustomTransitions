@@ -48,7 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.selectedSong = songs[indexPath.row]
-        let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
+        let theAttributes: UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
         selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview)
         self.performSegue(withIdentifier: "Player", sender: self)
     }

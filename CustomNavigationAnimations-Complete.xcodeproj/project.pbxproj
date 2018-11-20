@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13B49EE221A3DB5100505FE3 /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B49EE121A3DB5100505FE3 /* MusicListViewController.swift */; };
+		13B49EE421A3E6D400505FE3 /* TransparentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B49EE321A3E6D400505FE3 /* TransparentBar.swift */; };
 		65184E081F7E464B00172213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65184E071F7E464B00172213 /* AppDelegate.swift */; };
 		65184E0A1F7E464B00172213 /* MusicPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65184E091F7E464B00172213 /* MusicPickViewController.swift */; };
 		65184E0D1F7E464B00172213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65184E0B1F7E464B00172213 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		13B49EE121A3DB5100505FE3 /* MusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
+		13B49EE321A3E6D400505FE3 /* TransparentBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentBar.swift; sourceTree = "<group>"; };
 		65184E041F7E464B00172213 /* CustomNavigationAnimations-Complete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomNavigationAnimations-Complete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65184E071F7E464B00172213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65184E091F7E464B00172213 /* MusicPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPickViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				65184E071F7E464B00172213 /* AppDelegate.swift */,
 				65184E091F7E464B00172213 /* MusicPickViewController.swift */,
 				13B49EE121A3DB5100505FE3 /* MusicListViewController.swift */,
+				13B49EE321A3E6D400505FE3 /* TransparentBar.swift */,
 				65184E0B1F7E464B00172213 /* Main.storyboard */,
 				65184E0E1F7E464B00172213 /* Assets.xcassets */,
 				65184E101F7E464B00172213 /* LaunchScreen.storyboard */,
@@ -277,6 +280,7 @@
 				65184E3E1F7E58CE00172213 /* MusicPlayerViewController.swift in Sources */,
 				13B49EE221A3DB5100505FE3 /* MusicListViewController.swift in Sources */,
 				65184E391F7E4DDD00172213 /* SongCell.swift in Sources */,
+				13B49EE421A3E6D400505FE3 /* TransparentBar.swift in Sources */,
 				65184E081F7E464B00172213 /* AppDelegate.swift in Sources */,
 				65A41CC91F7E67EB0018E323 /* CustomAnimator.swift in Sources */,
 			);

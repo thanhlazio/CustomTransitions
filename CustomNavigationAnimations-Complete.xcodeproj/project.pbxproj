@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B49EE221A3DB5100505FE3 /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B49EE121A3DB5100505FE3 /* MusicListViewController.swift */; };
 		65184E081F7E464B00172213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65184E071F7E464B00172213 /* AppDelegate.swift */; };
 		65184E0A1F7E464B00172213 /* MusicPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65184E091F7E464B00172213 /* MusicPickViewController.swift */; };
 		65184E0D1F7E464B00172213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65184E0B1F7E464B00172213 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13B49EE121A3DB5100505FE3 /* MusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
 		65184E041F7E464B00172213 /* CustomNavigationAnimations-Complete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomNavigationAnimations-Complete.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65184E071F7E464B00172213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65184E091F7E464B00172213 /* MusicPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPickViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				65184E351F7E4DB700172213 /* Cells */,
 				65184E071F7E464B00172213 /* AppDelegate.swift */,
 				65184E091F7E464B00172213 /* MusicPickViewController.swift */,
+				13B49EE121A3DB5100505FE3 /* MusicListViewController.swift */,
 				65184E0B1F7E464B00172213 /* Main.storyboard */,
 				65184E0E1F7E464B00172213 /* Assets.xcassets */,
 				65184E101F7E464B00172213 /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 				65184E3C1F7E4E9900172213 /* Song.swift in Sources */,
 				65184E0A1F7E464B00172213 /* MusicPickViewController.swift in Sources */,
 				65184E3E1F7E58CE00172213 /* MusicPlayerViewController.swift in Sources */,
+				13B49EE221A3DB5100505FE3 /* MusicListViewController.swift in Sources */,
 				65184E391F7E4DDD00172213 /* SongCell.swift in Sources */,
 				65184E081F7E464B00172213 /* AppDelegate.swift in Sources */,
 				65A41CC91F7E67EB0018E323 /* CustomAnimator.swift in Sources */,
@@ -439,7 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CAJ5Q4AE6G;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
 				INFOPLIST_FILE = "$(SRCROOT)/CustomNavigationAnimations-Complete/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samstone.CustomNavigationAnimations;
@@ -454,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CAJ5Q4AE6G;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
 				INFOPLIST_FILE = "$(SRCROOT)/CustomNavigationAnimations-Complete/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samstone.CustomNavigationAnimations;
@@ -470,7 +474,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CAJ5Q4AE6G;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
 				INFOPLIST_FILE = "CustomNavigationAnimations-StarterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samstone.CustomNavigationAnimations-StarterTests";
@@ -487,7 +491,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CAJ5Q4AE6G;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
 				INFOPLIST_FILE = "CustomNavigationAnimations-StarterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samstone.CustomNavigationAnimations-StarterTests";
@@ -503,7 +507,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CAJ5Q4AE6G;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
 				INFOPLIST_FILE = "CustomNavigationAnimations-StarterUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samstone.CustomNavigationAnimations-StarterUITests";
@@ -519,7 +523,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CAJ5Q4AE6G;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
 				INFOPLIST_FILE = "CustomNavigationAnimations-StarterUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samstone.CustomNavigationAnimations-StarterUITests";

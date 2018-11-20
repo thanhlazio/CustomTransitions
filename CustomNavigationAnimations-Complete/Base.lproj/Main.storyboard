@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rxw-Vj-09d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rxw-Vj-09d">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,7 +48,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="List of Tracks" id="ir7-p3-9q8"/>
+                    <navigationItem key="navigationItem" title="List of Tracks" id="ir7-p3-9q8">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="5Wd-yG-HRy">
+                            <connections>
+                                <segue destination="Fxr-lu-n4v" kind="show" id="YaK-uG-yYv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="0MW-Hr-QFr" id="JgV-We-5GD"/>
                         <segue destination="qOl-e9-At2" kind="show" identifier="Player" id="bpF-j6-u86"/>
@@ -57,12 +62,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="492.50374812593708"/>
+            <point key="canvasLocation" x="62" y="513"/>
+        </scene>
+        <!--Tracks TableView-->
+        <scene sceneID="Cpi-7u-QOd">
+            <objects>
+                <viewController storyboardIdentifier="MusicListViewController" id="Hdi-v8-M4n" customClass="MusicListViewController" customModule="CustomNavigationAnimations_Complete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hob-ZT-LIG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tVP-B4-EON">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="64" id="Xms-dD-QjX">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xms-dD-QjX" id="o9q-hm-Rlr">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hdi-v8-M4n" id="3Pg-fH-QDM"/>
+                                    <outlet property="delegate" destination="Hdi-v8-M4n" id="Fuf-v3-qDl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tVP-B4-EON" secondAttribute="bottom" id="VZ3-sK-4rs"/>
+                            <constraint firstItem="tc6-bf-gYe" firstAttribute="trailing" secondItem="tVP-B4-EON" secondAttribute="trailing" id="Vqc-Hf-LI7"/>
+                            <constraint firstItem="tVP-B4-EON" firstAttribute="top" secondItem="tc6-bf-gYe" secondAttribute="top" id="eEh-Qd-diP"/>
+                            <constraint firstItem="tVP-B4-EON" firstAttribute="leading" secondItem="tc6-bf-gYe" secondAttribute="leading" id="jhC-dl-VEs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tc6-bf-gYe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tracks TableView" id="1qC-Bw-9Hw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="IAT-Fb-7zg">
+                            <connections>
+                                <action selector="stop:" destination="Hdi-v8-M4n" id="AMV-aL-DuK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="tVP-B4-EON" id="6Z2-OA-0gc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqV-OX-6f8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="512"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="iHN-bE-9NM">
             <objects>
-                <viewController title="Now Playing" id="qOl-e9-At2" customClass="MusicPlayerViewController" customModule="CustomNavigationAnimations_Complete" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MusicPlayerViewController" title="Now Playing" id="qOl-e9-At2" customClass="MusicPlayerViewController" customModule="CustomNavigationAnimations_Complete" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vkr-gK-e6I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +199,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ze8-xN-7EJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="79r-Iu-bWB"/>
                     <connections>
                         <outlet property="artist" destination="FW7-KX-UfY" id="W8G-sR-kpO"/>
                         <outlet property="artwork" destination="5YW-Ez-jNl" id="IZD-OV-m7I"/>
@@ -151,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZi-gq-4qw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725.5999999999999" y="492.50374812593708"/>
+            <point key="canvasLocation" x="902" y="1335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6QC-4f-zOJ">
@@ -169,12 +226,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ck7-Zt-uSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.80000000000001" y="492.95352323838085"/>
+            <point key="canvasLocation" x="-750" y="512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QFX-15-1sc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fxr-lu-n4v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ozS-eg-9C0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oco-5h-5lG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hdi-v8-M4n" kind="relationship" relationship="rootViewController" id="s4b-YJ-2V9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcd-yT-OWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="512"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Forward" width="85" height="85"/>
-        <image name="Play" width="85" height="85"/>
-        <image name="Previous" width="85" height="85"/>
+        <image name="Forward" width="204.80000305175781" height="204.80000305175781"/>
+        <image name="Play" width="204.80000305175781" height="204.80000305175781"/>
+        <image name="Previous" width="204.80000305175781" height="204.80000305175781"/>
     </resources>
 </document>

@@ -32,7 +32,7 @@ class CustomInteractor : UIPercentDrivenInteractiveTransition {
     
     @objc private func handleBackGesture(_ gesture : UIScreenEdgePanGestureRecognizer) {
         let viewTranslation = gesture.translation(in: gesture.view?.superview)
-        var progress = viewTranslation.x / self.navigationController.view.frame.width
+        let progress = viewTranslation.x / self.navigationController.view.frame.width
 
         switch gesture.state {
         case .began:

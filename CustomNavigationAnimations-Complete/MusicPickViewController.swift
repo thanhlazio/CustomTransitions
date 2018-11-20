@@ -17,12 +17,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     private var selectedFrame : CGRect?
     private var customInteractor : CustomInteractor?
     
-    private var songs : [Song] = [Song(artist: "Kendrick Lamar", title: "DNA", artwork: UIImage(named: "damn")!),Song(artist: "Freddie Gibbs", title: "Alexys", artwork: UIImage(named: "twice")!), Song(artist: "Brockhampton", title: "JUNKY", artwork: UIImage(named: "sat")!), Song(artist: "MC Eiht", title: "Represent Like This", artwork: UIImage(named: "west")!), Song(artist: "Tyler the Creator", title: "November", artwork: UIImage(named: "flower")!), Song(artist: "Jay-Z", title: "4:44", artwork: UIImage(named: "four")!), Song(artist: "Joey Bada$$", title: "ROCKABYE BABY", artwork: UIImage(named: "badass")!), Song(artist: "Sean Price", title: "Imperious Rex", artwork: UIImage(named: "imperious")!), Song(artist: "Oddisee", title: "Hold it back", artwork: UIImage(named: "iceburg")!), Song(artist: "J.I.D", title: "Never", artwork: UIImage(named: "never")!)]
+    private var songs: [Song] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.delegate = self
-        songs.append(contentsOf: songs + songs + songs)
+        songs = (1...5).map({ _ in Song.mockup }).flatMap({ $0 })
         SetupCollectionView()
     }
 

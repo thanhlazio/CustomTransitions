@@ -140,27 +140,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYp-oi-Py2">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9eF-7x-5oZ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nRm-BN-5sh">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <imageView userInteractionEnabled="NO" tag="99" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5YW-Ez-jNl">
-                                <rect key="frame" x="0.0" y="118" width="375" height="375"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5YW-Ez-jNl" secondAttribute="height" multiplier="1:1" id="YDJ-UJ-5EO"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMO-eh-LaA">
-                                <rect key="frame" x="0.0" y="490" width="375" height="177"/>
+                                <rect key="frame" x="0.0" y="452" width="375" height="215"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b1P-Eg-Es4">
-                                        <rect key="frame" x="0.0" y="10" width="375" height="41"/>
+                                        <rect key="frame" x="0.0" y="16" width="375" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="o02-SS-clm">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="17"/>
@@ -180,7 +180,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kwN-I4-3Ar" userLabel="PlayControl">
-                                        <rect key="frame" x="72.5" y="68" width="230" height="85"/>
+                                        <rect key="frame" x="72.5" y="106" width="230" height="85"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsh-VN-SiZ">
                                                 <rect key="frame" x="0.0" y="21.5" width="42.5" height="42.5"/>
@@ -216,7 +216,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="b1P-Eg-Es4" firstAttribute="top" secondItem="SMO-eh-LaA" secondAttribute="top" constant="10" id="KEI-mP-hDV"/>
+                                    <constraint firstItem="b1P-Eg-Es4" firstAttribute="top" secondItem="SMO-eh-LaA" secondAttribute="top" constant="16" id="KEI-mP-hDV"/>
                                     <constraint firstItem="b1P-Eg-Es4" firstAttribute="leading" secondItem="SMO-eh-LaA" secondAttribute="leading" id="OHb-m4-6Ny"/>
                                     <constraint firstAttribute="trailing" secondItem="b1P-Eg-Es4" secondAttribute="trailing" id="PYE-ea-Pm1"/>
                                     <constraint firstItem="kwN-I4-3Ar" firstAttribute="centerX" secondItem="SMO-eh-LaA" secondAttribute="centerX" id="SPy-0i-a42"/>
@@ -233,13 +233,13 @@
                             <constraint firstItem="tYp-oi-Py2" firstAttribute="leading" secondItem="ze8-xN-7EJ" secondAttribute="leading" id="S9m-4v-Qw6"/>
                             <constraint firstItem="9eF-7x-5oZ" firstAttribute="leading" secondItem="ze8-xN-7EJ" secondAttribute="leading" id="WR4-oN-EKd"/>
                             <constraint firstItem="ze8-xN-7EJ" firstAttribute="trailing" secondItem="tYp-oi-Py2" secondAttribute="trailing" id="Wpo-Cm-dak"/>
-                            <constraint firstItem="9eF-7x-5oZ" firstAttribute="top" secondItem="ze8-xN-7EJ" secondAttribute="top" id="YLd-uD-3gB"/>
-                            <constraint firstItem="5YW-Ez-jNl" firstAttribute="top" secondItem="ze8-xN-7EJ" secondAttribute="top" constant="54" id="dCL-m3-u53"/>
+                            <constraint firstItem="9eF-7x-5oZ" firstAttribute="top" secondItem="Vkr-gK-e6I" secondAttribute="top" id="YLd-uD-3gB"/>
+                            <constraint firstItem="5YW-Ez-jNl" firstAttribute="top" secondItem="ze8-xN-7EJ" secondAttribute="top" constant="16" id="dCL-m3-u53"/>
                             <constraint firstItem="SMO-eh-LaA" firstAttribute="top" secondItem="5YW-Ez-jNl" secondAttribute="bottom" constant="-3" id="dYe-Dq-rQR"/>
                             <constraint firstAttribute="bottom" secondItem="9eF-7x-5oZ" secondAttribute="bottom" id="ezY-wv-g9B"/>
                             <constraint firstItem="ze8-xN-7EJ" firstAttribute="bottom" secondItem="SMO-eh-LaA" secondAttribute="bottom" id="gcV-sh-I60"/>
                             <constraint firstItem="ze8-xN-7EJ" firstAttribute="trailing" secondItem="9eF-7x-5oZ" secondAttribute="trailing" id="iWW-cM-dya"/>
-                            <constraint firstItem="tYp-oi-Py2" firstAttribute="top" secondItem="ze8-xN-7EJ" secondAttribute="top" id="mda-FQ-Ege"/>
+                            <constraint firstItem="tYp-oi-Py2" firstAttribute="top" secondItem="Vkr-gK-e6I" secondAttribute="top" id="mda-FQ-Ege"/>
                             <constraint firstAttribute="bottom" secondItem="tYp-oi-Py2" secondAttribute="bottom" id="pOM-9y-cT3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ze8-xN-7EJ"/>
@@ -261,7 +261,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rxw-Vj-09d" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JO3-uU-9ur">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JO3-uU-9ur" customClass="TransparentNavigationBar" customModule="CustomNavigationAnimations_Complete" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

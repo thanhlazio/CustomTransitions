@@ -16,7 +16,27 @@ extension UIStoryboard {
     }
 }
 
-class MusicListViewController: UIViewController {
+class BaseViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configTransparentNavigationBar()
+    }
+    
+    func configTransparentNavigationBar() {
+        var titleTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor : UIColor.darkText]
+        if #available(iOS 8.2, *) {
+            titleTextAttributes[.font] = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)
+        }
+        navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+        navigationController?.navigationBar.tintColor = UIColor.gray.withAlphaComponent(0.7)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+    }
+}
+
+class MusicListViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     private var selectedSong : Song?
     

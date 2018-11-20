@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MusicPlayerViewController : UIViewController {
+class MusicPlayerViewController : BaseViewController {
     
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var artwork: UIImageView!
